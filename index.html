@@ -117,9 +117,7 @@ svg > rect {
 
         svg.setAttribute("viewBox", `0 0 ${newSize} ${newSize}`);
         noiseFilters.forEach((filter) => {
-            filter.setAttribute(
-                "numOctaves",
-            );
+            filter.setAttribute("numOctaves", newOctaves);
         });
         if (screen.height > screen.width){
           wip.style.flexDirection = 'column'
